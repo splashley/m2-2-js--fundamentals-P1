@@ -11,12 +11,10 @@
 // Q4
 // Write a function that accepts a list of numbers and returns a new list with
 // all of the even numbers removed.
-function removeEvens(lst) {
-  // lst is an array of strings
-}
+function removeEvens(takemeout) {
+  return takemeout.filter(function(number) {    return number % 2 !== 0;  });
+};
 
-console.log(
-  'Q4 removeEvens()',
-  removeEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
-);
+console.log(removeEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]));
 // should log [1, 3, 5, 7, 9, 11]
+

@@ -34,7 +34,9 @@ const notCode = [
 //
 // Q1
 // How many names does Morty have? (use the `grandson` string)
-//
+
+19!
+
 // PLEASE NOTE:
 //     this first question is solved for you, as a demonstration
 //     of how this works)
@@ -51,6 +53,8 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // Convert the alternateRicks string to an array, so that each name ("Simple
 // Rick") is an element in that array. Log that array to the console.
 
+const alternateRicksArray = alternateRicks.split('Simple Rick')
+console.log(`${alternateRicksArray}`)
 //
 //
 //
@@ -58,14 +62,34 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // Q3
 // How many Ricks have been named in alternateRicks?
 // HINT: There are multiple ways to solve this one. Maybe try a `for` loop!
+const alternateRicks =
+  'Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Insurance Rick, Sales Rick, Supervisor Rick, Cool Rick, Cowboy Rick, Tiny Rick, Cronenberg Rick, Teacher Rick, Farmer Rick, Future Rick, Rick J22, Evil Rick, Toxic Rick, Crunk Rick, Pickle Rick, The Scientist Formerly Known as Rick, Rick C-137';
 
+const alternateRicksArray1 = alternateRicks.split(",")
+
+const totalOfRicks = 0;
+for (let i = 0; i < alternateRicksArray1.length; i++) {  
+  if (alternateRicksArray1[i].includes('Rick')) {
+    totalOfRicks + 1;
+  }
+}
+console.log(`Total number of Ricks is ${totalOfRicks}`)
 //
 //
 //
 //
 // Q4
 // How many characters are there in rickSaying (without spaces)?
+const rickSaying = 'wubba lubba dub dub';
 
+let rickSayingCharacters = rickSaying.split('');
+let charactersInRickSaying = 0;
+for (let i = 0; i < rickSayingCharacters.length; i++) {
+  if (rickSayingCharacters[i] !== ' ') {
+    charactersInRickSaying = charactersInRickSaying + 1;
+  }
+}
+console.log(`The number of characters is ${charactersInRickSaying}`)
 //
 //
 //
